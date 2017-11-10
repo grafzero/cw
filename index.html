@@ -3,25 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <!-- Zapewnienie reagowania zawartości strony na różne wielkości ekranu -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Concept Web</title>
-    <!-- Skompresowany Bootstrap CSS dodany lokalnie -->
-
+    <title>conceptweb</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-
-
-
-
 </head>
 
 <body>
@@ -29,122 +19,109 @@
 <header class="header">
     <div class="header-background">
         <div class="header-vid-overlay"></div>
-        <video class="header-vid" playsinline autoplay muted loop>
+        <video poster="img/joel-filipe.jpg" class="header-vid" playsinline autoplay muted loop>
+            <source src="img/jelly.webm" type="video/webm">
             <source src="img/jelly.mp4" type="video/mp4">
         </video>
     </div>
-
-
-
 
     <div class="text-box">
         <h1 class="heading-primary" id="headerText">
             <span class="heading-primary-main">ConceptWeb</span>
             <span class="heading-primary-sub">welcome to the internet</span>
         </h1>
-
     </div>
-
-
 </header>
 
+<article>
+    <figure>
+        <div class="figure-overlay"></div>
+        <img id="ourWorkImage" src='img/ourwork.jpg' alt/>
+    </figure>
+    <section>
+        <div>
+            <h1 class="portfolioH">Our work</h1>
+            <p>Conceptweb provides a variety of interactive services<br/>
+                Scroll down to see some of our projects</p>
+        </div>
+    </section>
 
-    <article>
-        <figure>
-            <div class="figure-overlay"></div>
-            <img id="ourWorkImage" src='img/ourwork.jpg' alt />
-        </figure>
-        <section>
-            <div>
-                <h1 class="portfolioH">Our work</h1>
-                <p>Conceptweb provides a variety of interactive services<br/>
-                    Scroll down to see some of our projects</p>
-            </div>
-        </section>
+    <figure>
+        <img src='img/content.jpeg' alt/>
+    </figure>
+    <section>
+        <div>
+            <h2 class="portfolioH">Content<br/>
+                management</h2>
+            <p>Panasonic webpage: 10 countries (CEEG), more than 12000 products</p>
+        </div>
+    </section>
 
-        <figure>
-            <img src='img/content.jpeg' alt />
-        </figure>
-        <section>
-            <div>
-                <h2 class="portfolioH">Content<br/>
-                    management</h2>
-                <p>Panasonic webpage: 10 countries (CEEG), more than 12000 products</p>
-            </div>
-        </section>
+    <figure>
+        <img src='img/oled.png' alt/>
+    </figure>
+    <section>
+        <div>
+            <h2 class="portfolioH">Landing pages</h2>
+            <p>Panasonic OLED campaign 8 countries</p>
+        </div>
+    </section>
 
-        <figure>
-            <img src='img/oled.png' alt />
-        </figure>
-        <section>
-            <div>
-                <h2 class="portfolioH">Landing pages</h2>
-                <p>Panasonic OLED campaign 8 countries</p>
-            </div>
-        </section>
+    <figure>
+        <img src='img/gloci.png' alt/>
+    </figure>
+    <section>
+        <div>
+            <h2 class="portfolioH">Gloci mobile app</h2>
+            <p>Content creation - 18 000 points of interest</p>
+        </div>
+    </section>
 
-        <figure>
-            <img src='img/gloci.png' alt />
-        </figure>
-        <section>
-            <div>
-                <h2 class="portfolioH">Gloci mobile app</h2>
-                <p>Content creation - 18 000 points of interest</p>
-            </div>
-        </section>
+    <figure>
+        <img src='img/sc.png' alt/>
+    </figure>
+    <section>
+        <div>
+            <h2 class="portfolioH">Web development</h2>
+            <p>Website production - from design to deployment</p>
+        </div>
+    </section>
 
-        <figure>
-            <img src='img/sc.png' alt />
-        </figure>
-        <section>
-            <div>
-                <h2 class="portfolioH">Web development</h2>
-                <p>Website production - from design to deployment</p>
-            </div>
-        </section>
+    <figure>
+        <img src='img/banners.png' alt/>
+    </figure>
+    <section>
+        <div>
+            <h2 class="portfolioH">Ad creation</h2>
+            <p>Static and interactive banners</p>
+        </div>
+    </section>
 
-        <figure>
-            <img src='img/banners.png' alt />
-        </figure>
-        <section>
-            <div>
-                <h2 class="portfolioH">Ad creation</h2>
-                <p>Static and interactive banners</p>
-            </div>
-        </section>
-
-        <figure>
-            <div class="vid-overlay"></div>
-
-            <video playsinline autoplay muted loop>
-                <source src="img/jelly.mp4" type="video/mp4">
-            </video>
-            <!--<img src='img/form-bg.jpg' alt />-->
-            <div class="contact-form-wrapper">
-                <form class="contact-form" action="https://formspree.io/anna.kozlowska@conceptweb.com.pl"
-                      method="POST">
-                    <input class="cfinputs" id="nameInput" type="text" placeholder="Your name" required />
-                    <input class="cfinputs" type="email" placeholder="Your email" required/>
-                    <textarea class="cfinputs" placeholder="Your message" required></textarea>
+    <figure>
+        <div class="vid-overlay"></div>
+        <video poster="img/joel-filipe.jpg" playsinline autoplay muted loop>
+            <source src="img/jelly.webm" type="video/webm">
+            <source src="img/jelly.mp4" type="video/mp4">
+        </video>
+        <div class="contact-form-wrapper">
+            <form class="contact-form" action="https://formspree.io/anna.kozlowska@conceptweb.com.pl"
+                  method="POST">
+                <input class="cfinputs" id="nameInput" type="text" placeholder="Your name" required/>
+                <input class="cfinputs" type="email" placeholder="Your email" required/>
+                <textarea class="cfinputs" placeholder="Your message" required></textarea>
                 <button type="submit">SEND</button>
-                </form>
-            </div>
+            </form>
+        </div>
+    </figure>
 
-        </figure>
-
-
-        <section>
-            <div>
-                <h2 class="portfolioH">Get in touch
-                   </h2>
-                <p>Leave us a message!</p>
-            </div>
-        </section>
-
-    </article>
-
-
-
+    <section>
+        <div>
+            <h2 class="portfolioH">Get in touch
+            </h2>
+            <p>Leave us a message!</p>
+        </div>
+    </section>
+</article>
 
 <script src="js/3dText.js"></script>
 <script src="js/formFocus.js"></script>
