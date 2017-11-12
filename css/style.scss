@@ -148,9 +148,78 @@ a {
   }
 }
 
+section {
+    font-family: 'Barlow Condensed', sans-serif;
+  color: $primary-color;
+  text-align: center;
+  width: 100%;
+
+
+}
+
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+
+}
+
+.contact-form {
+  position: absolute;
+  top: 100px;
+  left: 25%;
+  width: 50%;
+  z-index: 6;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  height: 40px;
+  background: rgba(7, 44, 73, 0.47);
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  padding-left: 10px;
+  width: 100%;
+  font-size: calc(1vmin + 1vmax);
+  margin-bottom: 15px;
+
+}
+
+.contact-form {
+  textarea {
+    height: 200px;
+  }
+}
+
+.contact-form {
+  input:focus {
+    outline: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //handling heading on smaller screens
-@media screen and (min-width:  501px) and (max-width:  800px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
   .heading-primary-main {
 
     font-size: 40px;
@@ -169,7 +238,7 @@ a {
 
 }
 
-@media screen and (max-width:  500px) {
+@media screen and (max-width: 500px) {
   .heading-primary-main {
     font-size: 20px;
     font-weight: 400;
@@ -185,21 +254,23 @@ a {
 
 }
 
-
 @media screen and (max-width: 699px) {
 
   body > article {
     display: flex;
     flex-wrap: wrap;
   }
-figure{
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
-}
-}
+  figure {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
 
+    img {
+      width: 100%;
+    }
 
+  }
+}
 
 @media screen and (min-width: 700px) {
   body > article {
