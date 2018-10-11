@@ -72,9 +72,8 @@ a {
 
 }
 
-
 .heading-primary {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 60px;
@@ -150,14 +149,12 @@ a {
 }
 
 section {
-    font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   color: $primary-color;
   text-align: center;
   width: 100%;
 
 }
-
-
 
 //handling heading on smaller screens
 @media screen and (min-width: 501px) and (max-width: 800px) {
@@ -205,9 +202,9 @@ section {
     }
   }
 
-.header-vid{
-  transform: translateX(-26%);
-}
+  .header-vid {
+    transform: translateX(-26%);
+  }
 
   .contact-form input,
   .contact-form textarea,
@@ -224,7 +221,7 @@ section {
     margin-bottom: 15px;
   }
 
-  .contact-form button:hover{
+  .contact-form button:hover {
     background-color: #1c59a3;
     opacity: 0.8;
   }
@@ -241,17 +238,25 @@ section {
       padding-top: 7px;
     }
 
-    textarea::-webkit-input-placeholder { font-family: "Lato", sans-serif; }
-    textarea::-moz-placeholder { font-family: "Lato", sans-serif; } /* firefox 19+ */
-    textarea:-ms-input-placeholder { font-family: "Lato", sans-serif; } /* ie */
-    textareainput:-moz-placeholder { font-family: "Lato", sans-serif; }
+    textarea::-webkit-input-placeholder {
+      font-family: "Lato", sans-serif;
+    }
+    textarea::-moz-placeholder {
+      font-family: "Lato", sans-serif;
+    }
+    /* firefox 19+ */
+    textarea:-ms-input-placeholder {
+      font-family: "Lato", sans-serif;
+    }
+    /* ie */
+    textareainput:-moz-placeholder {
+      font-family: "Lato", sans-serif;
+    }
 
     input:focus {
       outline: none;
     }
   }
-
-
 
   div.vid-overlay {
     @include main-gradient;
@@ -265,7 +270,6 @@ section {
     background-position: center;
   }
 
-
   section video {
     min-width: 100%;
     min-height: 100%;
@@ -274,10 +278,10 @@ section {
     height: 100%;
   }
 
-  section#contactSection{
+  section#contactSection {
     overflow: hidden;
     padding: 0;
-    position:relative;
+    position: relative;
   }
 
   .contact-form-wrapper {
@@ -400,6 +404,11 @@ section {
     right: 5vmin;
     left: 45%;
   }
+
+  section#getintouchsection {
+    margin: 0 auto 0vh 0;
+  }
+
   figure img {
     min-width: 100%;
     min-height: 100%;
@@ -420,26 +429,25 @@ section {
     object-position: center;
   }
 
-  section#contactSection{
-       overflow: hidden;
-       padding: 0;
+  section#contactSection {
+    overflow: hidden;
+    padding: 0;
 
-     }
+  }
 
-  section#contactSection:before{
+  section#contactSection:before {
     overflow: hidden;
     padding: 0;
     clip-path: polygon(-15% -15%, 100% 0%, 0% 100%);
   }
 
-
-  figure#contactFigure{
+  figure#contactFigure {
     padding: 5vmin;
     font-family: 'Barlow Condensed', sans-serif;
     color: $primary-color;
   }
 
-  figure > div{
+  figure > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -447,8 +455,8 @@ section {
     padding: 1rem;
   }
 
-  figure#contactFigure{
-    p{
+  figure#contactFigure {
+    p {
       text-align: right;
       width: 100%;
       font-weight: 400;
@@ -456,8 +464,6 @@ section {
       margin-bottom: 5%;
     }
   }
-
-
 
   div.vid-overlay {
     @include main-gradient;
@@ -539,7 +545,7 @@ section {
     margin-bottom: 15px;
   }
 
-  .contact-form button:hover{
+  .contact-form button:hover {
     background-color: #1c59a3;
     opacity: 0.8;
   }
@@ -550,10 +556,20 @@ section {
       padding-top: 7px;
     }
 
-    textarea::-webkit-input-placeholder { font-family: "Lato", sans-serif; }
-    textarea::-moz-placeholder { font-family: "Lato", sans-serif; } /* firefox 19+ */
-    textarea:-ms-input-placeholder { font-family: "Lato", sans-serif; } /* ie */
-    textareainput:-moz-placeholder { font-family: "Lato", sans-serif; }
+    textarea::-webkit-input-placeholder {
+      font-family: "Lato", sans-serif;
+    }
+    textarea::-moz-placeholder {
+      font-family: "Lato", sans-serif;
+    }
+    /* firefox 19+ */
+    textarea:-ms-input-placeholder {
+      font-family: "Lato", sans-serif;
+    }
+    /* ie */
+    textareainput:-moz-placeholder {
+      font-family: "Lato", sans-serif;
+    }
   }
 
   .contact-form {

@@ -61,7 +61,7 @@ a {
   z-index: 3; }
 
 .heading-primary {
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 60px; }
@@ -345,6 +345,9 @@ section {
   section:nth-of-type(2n):after {
     right: 5vmin;
     left: 45%; }
+
+  section#getintouchsection {
+    margin: 0 auto 0vh 0; }
 
   figure img {
     min-width: 100%;
